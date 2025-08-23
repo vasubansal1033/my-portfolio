@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Code, Coffee, Lightbulb, Users } from 'lucide-react';
+import Image from 'next/image';
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -71,14 +72,16 @@ export default function About() {
               className="flex justify-center"
             >
               <div className="relative group">
-                <img 
+                <Image
                   src="/images/vasu.jpg"
                   alt="Vasu Bansal"
                   className="w-72 h-72 rounded-2xl object-cover shadow-xl hover:scale-105 transition-transform duration-300 border-4 border-gray-200 group-hover:border-blue-400"
+                  width={288}
+                  height={288}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl flex items-end justify-center p-6">
                   <p className="text-white text-center text-base font-medium">
-                    That's me!
+                    That&apos;s me!
                   </p>
                 </div>
               </div>
@@ -91,14 +94,16 @@ export default function About() {
               className="flex justify-center"
             >
               <div className="relative group">
-                <img
+                <Image
                   src="/images/homelab.jpg"
                   alt="Vasu Bansal's Homelab"
                   className="w-72 h-72 rounded-2xl object-cover shadow-xl hover:scale-105 transition-transform duration-300 border-4 border-gray-200 group-hover:border-blue-400"
+                  width={288}
+                  height={288}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl flex items-end justify-center p-6">
                   <p className="text-white text-center text-base font-medium">
-                    My homelab setup! There's a chance that you'll be getting served this page from the RaspberryPi in the background.
+                    My homelab setup! There&apos;s a chance that you&apos;ll be getting served this page from the RaspberryPi in the background.
                   </p>
                 </div>
               </div>

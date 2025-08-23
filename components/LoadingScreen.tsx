@@ -151,7 +151,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            Gotta catch 'em all!
+            Gotta catch &apos;em all!
           </motion.p>
         )}
       </div>

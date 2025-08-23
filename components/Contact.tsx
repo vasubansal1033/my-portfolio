@@ -69,7 +69,7 @@ export default function Contact() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+            I&apos;m always open to discussing new opportunities, interesting projects, or just having a chat about technology.
           </p>
         </motion.div>
 
@@ -80,7 +80,7 @@ export default function Contact() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Let's Connect</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">Let&apos;s Connect</h3>
             
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => {

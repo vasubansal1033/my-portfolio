@@ -80,7 +80,7 @@ export default function Skills() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Here's my flex board (pun intended!)
+            Here&apos;s my flex board (pun intended!)
           </p>
         </motion.div>
 

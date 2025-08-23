@@ -2,21 +2,17 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X, Home, User, Code, BookOpen, Mail, FileText, Settings } from 'lucide-react';
-import Link from 'next/link';
+import { Menu, X, Home, User, Code, Mail, FileText, Settings } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', href: '#home', icon: Home },
   { name: 'About', href: '#about', icon: User },
   { name: 'Skills', href: '#skills', icon: Code },
-  { name: 'Blog', href: '#blog', icon: BookOpen },
   { name: 'Resume', href: '#resume', icon: FileText },
   { name: 'Contact', href: '#contact', icon: Mail },
 ];
 
-const externalNavItems = [
-  { name: 'Full Blog', href: '/blog', icon: BookOpen },
-];
+
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,17 +88,7 @@ export default function Navigation() {
                   )}
                 </button>
               ))}
-              
-              {/* External Links */}
-              {externalNavItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-white hover:text-blue-300 transition-all duration-300 font-medium"
-                >
-                  {item.name}
-                </Link>
-              ))}
+
             </div>
 
             {/* Mobile Menu Button */}
