@@ -1,0 +1,163 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { Download, Briefcase, GraduationCap, Award } from 'lucide-react';
+
+export default function Resume() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const experience = [
+    {
+      title: 'Full Stack Developer',
+      company: 'Freelance & Projects',
+      period: '2023 - Present',
+      description: 'Developing modern web applications using React, Next.js, and Node.js. Focus on creating responsive, user-friendly interfaces and scalable backend solutions.',
+    },
+    {
+      title: 'Frontend Developer',
+      company: 'Various Projects',
+      period: '2022 - 2023',
+      description: 'Built interactive web applications with emphasis on user experience. Specialized in React ecosystem, TypeScript, and modern CSS frameworks.',
+    },
+    {
+      title: 'Web Development Student',
+      company: 'Self-Directed Learning',
+      period: '2021 - 2022',
+      description: 'Intensive study of web development fundamentals including JavaScript, HTML5, CSS3, and modern development practices. Built multiple personal projects to solidify skills.',
+    },
+  ];
+
+  const education = [
+    {
+      degree: 'Computer Science & Engineering',
+      school: 'Academic Institution',
+      period: '2020 - 2024',
+      description: 'Focused on software development, data structures, algorithms, and web technologies. Participated in coding competitions and open-source projects.',
+    },
+  ];
+
+  const certifications = [
+    'React Developer Certification',
+    'JavaScript ES6+ Fundamentals',
+    'Full Stack Web Development',
+    'Git & Version Control Mastery',
+  ];
+
+  return (
+    <section id="resume" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Resume
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-6"></div>
+          <p className="text-gray-600 max-w-3xl mx-auto mb-8">
+            My professional journey and achievements in software development
+          </p>
+          
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/25"
+          >
+            <Download className="w-5 h-5 mr-2" />
+            Download Resume
+          </motion.button>
+        </motion.div>
+
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Experience */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className="flex items-center mb-8">
+              <Briefcase className="w-8 h-8 text-blue-600 mr-4" />
+              <h3 className="text-3xl font-bold text-gray-900">Experience</h3>
+            </div>
+            
+            <div className="space-y-8">
+              {experience.map((job, index) => (
+                <motion.div
+                  key={job.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.8, delay: 0.4 + index * 0.1 }}
+                  className="bg-white p-6 rounded-xl shadow-lg"
+                >
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{job.title}</h4>
+                  <div className="text-blue-600 font-semibold mb-2">{job.company}</div>
+                  <div className="text-gray-500 text-sm mb-4">{job.period}</div>
+                  <p className="text-gray-600">{job.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Education & Certifications */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            {/* Education */}
+            <div className="flex items-center mb-8">
+              <GraduationCap className="w-8 h-8 text-blue-600 mr-4" />
+              <h3 className="text-3xl font-bold text-gray-900">Education</h3>
+            </div>
+            
+            <div className="space-y-6 mb-12">
+              {education.map((edu, index) => (
+                <motion.div
+                  key={edu.degree}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.8, delay: 0.6 + index * 0.1 }}
+                  className="bg-white p-6 rounded-xl shadow-lg"
+                >
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{edu.degree}</h4>
+                  <div className="text-blue-600 font-semibold mb-2">{edu.school}</div>
+                  <div className="text-gray-500 text-sm mb-4">{edu.period}</div>
+                  <p className="text-gray-600">{edu.description}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Certifications */}
+            <div className="flex items-center mb-8">
+              <Award className="w-8 h-8 text-blue-600 mr-4" />
+              <h3 className="text-3xl font-bold text-gray-900">Certifications</h3>
+            </div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="bg-white p-6 rounded-xl shadow-lg"
+            >
+              <ul className="space-y-3">
+                {certifications.map((cert, index) => (
+                  <li key={cert} className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                    {cert}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
