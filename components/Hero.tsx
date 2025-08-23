@@ -53,8 +53,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Passionate Full Stack Developer with expertise in modern web technologies.
-            I create innovative digital solutions that deliver exceptional user experiences.
+            A passionate Backend Engineer with expertise in developing scalable and efficient backend systems and strong focus on writing clean, maintainable code.
           </motion.p>
 
           <motion.div
@@ -64,7 +63,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.8 }}
           >
             <a
-              href="https://github.com/vasubansal"
+              href="https://github.com/vasubansal1033"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 backdrop-blur-md border border-white/20 rounded-full p-3 sm:p-4 hover:bg-white/20 transition-all duration-300 hover:scale-110 group"
@@ -73,7 +72,7 @@ export default function Hero() {
               <Github className="w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:text-blue-300" />
             </a>
             <a
-              href="https://linkedin.com/in/vasubansal"
+              href="https://www.linkedin.com/in/vasu-bansal-673030147/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 backdrop-blur-md border border-white/20 rounded-full p-3 sm:p-4 hover:bg-white/20 transition-all duration-300 hover:scale-110 group"
@@ -82,28 +81,15 @@ export default function Hero() {
               <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:text-blue-300" />
             </a>
             <a
-              href="mailto:vasu@example.com"
+              href="mailto:vasubansal1998@gmail.com"
               className="bg-white/10 backdrop-blur-md border border-white/20 rounded-full p-3 sm:p-4 hover:bg-white/20 transition-all duration-300 hover:scale-110 group"
               aria-label="Email Contact"
             >
               <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:text-blue-300" />
             </a>
           </motion.div>
-
-
         </motion.div>
-
-        <motion.div
-          className="absolute bottom-6 left-1/2 transform -translate-x-1/2 cursor-pointer"
-          animate={{ y: [0, 6, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          onClick={scrollToAbout}
-          whileHover={{ scale: 1.1 }}
-        >
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-full p-3 hover:bg-white/20 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-            <ChevronDown className="w-5 h-5 text-white/80 hover:text-blue-300 transition-colors" />
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   );

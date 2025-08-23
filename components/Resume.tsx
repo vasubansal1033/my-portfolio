@@ -12,31 +12,31 @@ export default function Resume() {
 
   const experience = [
     {
-      title: 'Full Stack Developer',
-      company: 'Freelance & Projects',
-      period: '2023 - Present',
-      description: 'Developing modern web applications using React, Next.js, and Node.js. Focus on creating responsive, user-friendly interfaces and scalable backend solutions.',
+      title: 'MTS-3',
+      company: 'Nutanix',
+      period: 'May 2025 - Present',
+      description: 'Member of the NDB R&D team. Part of the security and the SQL Server team. Primary tech stack is Java/Springboot, PostgreSQL.',
     },
     {
-      title: 'Frontend Developer',
-      company: 'Various Projects',
-      period: '2022 - 2023',
-      description: 'Built interactive web applications with emphasis on user experience. Specialized in React ecosystem, TypeScript, and modern CSS frameworks.',
+      title: 'SDE-2',
+      company: 'GoTo Financials(Gojek)',
+      period: 'June 2022 - May 2025',
+      description: 'Member of the OneKYC team. Primary tech stack was Java/Springboot, Golang, Ruby on Rails, PostgreSQL, Kafka, Redis, Docker, Kubernetes. Promoted from SDE-1 to SDE-2 in June 2024.',
     },
     {
-      title: 'Web Development Student',
-      company: 'Self-Directed Learning',
-      period: '2021 - 2022',
-      description: 'Intensive study of web development fundamentals including JavaScript, HTML5, CSS3, and modern development practices. Built multiple personal projects to solidify skills.',
+      title: 'Analyst',
+      company: 'Deloitte',
+      period: 'June 2021 - June 2022',
+      description: 'Member of the CogSpend team. Primary tech stack was Java/Springboot and Python',
     },
   ];
 
   const education = [
     {
-      degree: 'Computer Science & Engineering',
-      school: 'Academic Institution',
-      period: '2020 - 2024',
-      description: 'Focused on software development, data structures, algorithms, and web technologies. Participated in coding competitions and open-source projects.',
+      degree: 'Mechanical Engineering',
+      school: 'Indian Institute of Technology Kanpur',
+      period: '2016 - 2021',
+      description: 'B.Tech in Mechanical Engineering and 2nd major in Aerospace Engineering. Graduated with a CGPA of 7.8/10. I was part of IITK Motorsports. Resident of Hall-3',
     },
   ];
 
@@ -62,17 +62,19 @@ export default function Resume() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-3xl mx-auto mb-8">
-            My professional journey and achievements in software development
+            <i>If you are a recruiter, please read. If you are a friend, please consider a referral. If you are a foe, you can still read and feel jealous.</i>
           </p>
           
-          <motion.button
+          <motion.a
+            href="/resume.pdf"
+            download
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/25"
           >
             <Download className="w-5 h-5 mr-2" />
             Download Resume
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">

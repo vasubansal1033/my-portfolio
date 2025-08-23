@@ -16,7 +16,6 @@ const navItems = [
 
 const externalNavItems = [
   { name: 'Full Blog', href: '/blog', icon: BookOpen },
-  { name: 'Admin', href: '/admin/blog', icon: Settings },
 ];
 
 export default function Navigation() {

@@ -5,9 +5,9 @@ import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/vasubansal', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/vasubansal', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:vasu@example.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/vasubansal1033', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/vasu-bansal-673030147/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:vasubansal1998@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function Footer() {
               Vasu Bansal
             </h3>
             <p className="text-gray-400 max-w-lg mx-auto leading-relaxed">
-              Passionate Full Stack Developer crafting innovative digital solutions with modern web technologies.
+              Passionate and greedy backend engineer.
             </p>
           </motion.div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
             className="border-t border-gray-800 pt-8"
           >
             <p className="text-gray-400 flex items-center justify-center">
-              Crafted with <Heart className="w-4 h-4 text-red-500 mx-2 animate-pulse" /> by Vasu Bansal
+              Crafted with <Heart className="w-4 h-4 text-red-500 mx-2 animate-pulse" /> by Vasu Bansal and AI.
             </p>
             <p className="text-gray-500 text-sm mt-2">
               © {new Date().getFullYear()} Vasu Bansal. All rights reserved.

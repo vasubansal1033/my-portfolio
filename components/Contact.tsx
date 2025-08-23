@@ -37,19 +37,19 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'vasu@example.com',
-      href: 'mailto:vasu@example.com',
+      value: 'vasubansal1998@gmail.com',
+      href: 'mailto:vasubansal1998@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+91 7318020832',
+      href: 'tel:+917318020832',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Available Remotely',
+      value: 'Bengaluru, Karnataka, India',
       href: '#',
     },
   ];
@@ -116,12 +116,10 @@ export default function Contact() {
                 Available for Opportunities
               </h4>
               <p className="text-gray-600 mb-4">
-                I'm currently open to new opportunities and interesting projects. 
-                Whether you're looking for a full-time developer, consultant, or 
-                collaboration partner, I'd love to hear from you.
+                Please reach out to me if you have anything interesting to share or discuss. Can think of remote opportunities if the money is good.
               </p>
               <div className="flex flex-wrap gap-2">
-                {['Remote Work', 'Full-time', 'Contract', 'Consulting'].map((tag) => (
+                {['Remote Work', 'Full-time'].map((tag) => (
                   <span
                     key={tag}
                     className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border"
@@ -209,6 +207,11 @@ export default function Contact() {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const mailtoUrl = `mailto:vasubansal1998@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
+                  window.location.href = mailtoUrl;
+                }}
                 className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-4 rounded-xl font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 flex items-center justify-center hover:shadow-xl hover:shadow-blue-500/25"
               >
                 <Send className="w-5 h-5 mr-2" />

@@ -25,7 +25,13 @@
     "react-markdown": "^9.0.1",
     "react-syntax-highlighter": "^15.5.0",
     "@types/react-syntax-highlighter": "^15.5.11",
+    "gray-matter": "^4.0.3",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }
