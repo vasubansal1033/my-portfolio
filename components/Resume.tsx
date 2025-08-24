@@ -15,19 +15,30 @@ export default function Resume() {
       title: 'MTS-3',
       company: 'Nutanix',
       period: 'May 2025 - Present',
-      description: 'Member of the NDB R&D team. Part of the security and the SQL Server team. Primary tech stack is Java/Springboot, PostgreSQL.',
+      description: [
+        'Member of the NDB R&D team',
+        'Part of the security and the SQL Server team',
+        'Primary tech stack is Java/Springboot, PostgreSQL'
+      ].join('. '),
     },
     {
       title: 'SDE-2',
       company: 'GoTo Financials(Gojek)',
       period: 'June 2022 - May 2025',
-      description: 'Member of the OneKYC team. Primary tech stack was Java/Springboot, Golang, Ruby on Rails, PostgreSQL, Kafka, Redis, Docker, Kubernetes. Promoted from SDE-1 to SDE-2 in June 2024.',
+      description: [
+        'Member of the OneKYC team',
+        'Primary tech stack was Java/Springboot, Golang, Ruby on Rails, PostgreSQL, Kafka, Redis, Docker, Kubernetes',
+        'Promoted from SDE-1 to SDE-2 in June 2024'
+      ].join('. '),
     },
     {
       title: 'Analyst',
       company: 'Deloitte',
       period: 'June 2021 - June 2022',
-      description: 'Member of the CogSpend team. Primary tech stack was Java/Springboot and Python',
+      description: [
+        'Member of the CogSpend team',
+        'Primary tech stack was Java/Springboot and Python'
+      ].join('. '),
     },
   ];
 
@@ -36,15 +47,19 @@ export default function Resume() {
       degree: 'Mechanical Engineering',
       school: 'Indian Institute of Technology Kanpur',
       period: '2016 - 2021',
-      description: 'B.Tech in Mechanical Engineering and 2nd major in Aerospace Engineering. Graduated with a CGPA of 7.8/10. I was part of IITK Motorsports. Resident of Hall-3',
+      description: [
+        'B.Tech in Mechanical Engineering and 2nd major in Aerospace Engineering',
+        'Graduated with a CGPA of 7.8/10',
+        'I was part of IITK Motorsports',
+        'Resident of Hall-3'
+      ].join('. '),
     },
   ];
 
   const certifications = [
-    'React Developer Certification',
-    'JavaScript ES6+ Fundamentals',
-    'Full Stack Web Development',
-    'Git & Version Control Mastery',
+    'Deep Learning Specialization by Andrew Ng on Coursera',
+    'Git and Github Master Course',
+    'The Complete Foundation Stock Trading Course'
   ];
 
   return (
