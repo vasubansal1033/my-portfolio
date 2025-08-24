@@ -64,7 +64,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           className="mb-8 flex justify-center"
         >
           <motion.img
-            src="/pikachu-run.gif"
+            src="/my-portfolio/pikachu-run.gif"  // Add the basePath manually
             alt="Pikachu running"
             className="w-32 h-32 object-contain"
             animate={{ 

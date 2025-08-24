@@ -73,7 +73,7 @@ export default function About() {
             >
               <div className="relative group">
                 <Image
-                  src="/images/vasu.jpg"
+                  src="/my-portfolio/images/vasu.jpg"
                   alt="Vasu Bansal"
                   className="w-72 h-72 rounded-2xl object-cover shadow-xl hover:scale-105 transition-transform duration-300 border-4 border-gray-200 group-hover:border-blue-400"
                   width={288}
@@ -95,7 +95,7 @@ export default function About() {
             >
               <div className="relative group">
                 <Image
-                  src="/images/homelab.jpg"
+                  src="/my-portfolio/images/homelab.jpg"
                   alt="Vasu Bansal's Homelab"
                   className="w-72 h-72 rounded-2xl object-cover shadow-xl hover:scale-105 transition-transform duration-300 border-4 border-gray-200 group-hover:border-blue-400"
                   width={288}

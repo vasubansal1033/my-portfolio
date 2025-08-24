@@ -137,7 +137,7 @@ export default function AudioPlayer() {
         muted={false}
       >
         {/* Primary audio source - your local file */}
-        <source src="/audio/littleroot_town.m4a" type="audio/mp4" />
+        <source src="/my-portfolio/audio/littleroot_town.m4a" type="audio/mp4" />
         {/* Fallback for when local file is not available */}
         <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav" />
         Your browser does not support the audio element.
